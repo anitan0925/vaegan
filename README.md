@@ -1,6 +1,6 @@
 # VAEGAN
 This is a code for generating images with [VAEGAN](http://arxiv.org/abs/1512.09300) (variational autoencoder + generative adversarial net).
-Its original code is [[1]][[1]].  
+Its original code is [1].
 Our implementation is done using [Theano](https://github.com/Theano/Theano).
 
 ## Demonstoration
@@ -30,15 +30,13 @@ The parameter that generates above images is available from [here](https://drive
 ## Optimization tips
 
 - The optimization procedure is composed of two phases. In early phase, we pretrain VAE using pixel-wise error and discriminator separately.  
-  In final phase, we train ovenall VAEGAN model as in [[1]][[1]]. 
+  In final phase, we train ovenall VAEGAN model as in [1].
 
 - We use the ADAM to train models in our example (eta=1e-3, beta1=0.9, beta2=0.999, epsilon=1e-8).
 
-- Depending on the probabilities of real/fake as real/fake on a minibatch at an each iteration, we change the cost that should be optimized as done in [[2]][[2]].
+- Depending on the probabilities of real/fake as real/fake on a minibatch at an each iteration, we change the cost that should be optimized as done in [2].
 
 ## References
-[[1]] https://github.com/andersbll/autoencoding_beyond_pixels  
-[[2]] https://github.com/skaae/vaeblog
+[1] https://github.com/andersbll/autoencoding_beyond_pixels  
+[2] https://github.com/skaae/vaeblog
 
-[[1]]:https://github.com/andersbll/autoencoding_beyond_pixels  
-[[2]]:https://github.com/skaae/vaeblog
