@@ -1,0 +1,6 @@
+{
+"test_data_dir"  : "./test_lfw",
+"param_path"     : "./tmp_params/param.model",
+"box"            : [50,50,200,200],
+"output_dir"     : "./tmp"
+}

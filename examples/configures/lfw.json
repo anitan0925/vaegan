@@ -1,0 +1,8 @@
+{
+"pretrain"          : true,
+"train_data_dir"    : "./train_lfw",
+"test_data_dir"     : "./test_lfw",
+"box"               : [50,50,200,200],
+"output_params_dir" : "./tmp_params",
+"output_dir"        : "./tmp"
+}
