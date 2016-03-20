@@ -1,7 +1,7 @@
 # VAEGAN
 This is a code for generating images with [VAEGAN](http://arxiv.org/abs/1512.09300) (variational autoencoder + generative adversarial net).
 Its original code is [1].
-Our implementation is done using [Theano](https://github.com/Theano/Theano).
+Our implementation is done using [Theano](https://github.com/Theano/Theano)(>=0.8.0rc1).
 
 ## Demonstoration
 Download [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) dataset, split it into train and test datasets, and train VAEGAN.
