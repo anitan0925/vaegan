@@ -38,5 +38,6 @@ The parameter that generates above images is available from [here](https://drive
 
 ## References
 [1] https://github.com/andersbll/autoencoding_beyond_pixels  
-[2] https://github.com/skaae/vaeblog
-
+[2] https://github.com/skaae/vaeblog  
+[3] https://gist.github.com/Newmu/a56d5446416f5ad2bbac  
+[4] https://gist.github.com/kastnerkyle/f3f67424adda343fef40
