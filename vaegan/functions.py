@@ -6,7 +6,7 @@ Activations, convolution, and poolings.
 import numpy as np
 import theano
 import theano.tensor as tensor
-from theano.tensor.signal.downsample import max_pool_2d
+from theano.tensor.signal.pool import pool_2d
 from theano.tensor.nnet import conv2d
 
 def rectify( x ):
@@ -41,7 +41,7 @@ def conv( x, w, b=None ):
     return z
 
 def max_pool( x, size, ignore_border=False ):
-    return max_pool_2d( x, size, ignore_border=ignore_border )
+    return pool_2d( x, size, ignore_border=ignore_border )
 
 def depool( x, factor=2 ):
     """
