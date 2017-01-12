@@ -25,12 +25,11 @@ python morphing.py configures/lfw_morph.json
 
 ![Figure 3. Morphing faces.](images/morphing_0.jpeg)  
 
-The parameter that generates above images is available from [here](https://drive.google.com/file/d/0B2qtm5RDP8ZMUWdZeWxmRUVwUVE/view?usp=sharing).
 
 ## Optimization tips
 
 - The optimization procedure is composed of two phases. In early phase, we pretrain VAE using pixel-wise error and discriminator separately.  
-  In final phase, we train ovenall VAEGAN model as in [1].
+  In final phase, we train overall VAEGAN model as in [1].
 
 - We use the ADAM to train models in our example (eta=1e-3, beta1=0.9, beta2=0.999, epsilon=1e-8).
 
