@@ -58,7 +58,7 @@ class VAEGAN( object ):
                                             - tensor.exp(2*log_sigma), 
                                             axis=1 ).mean()
 
-        ## Early phase (train VAE using pixel-wise error + discriminator saparately)
+        ## Early phase (train VAE using pixel-wise error + discriminator separately)
         ## Reconstruct (minimize w.r.t. generative params )
         self.reconstruct_cost_vis = 0.5 * tensor.sum( tensor.sqr(self.x - self.y),
                                                       axis=(1,2,3) ).mean() 
@@ -66,11 +66,11 @@ class VAEGAN( object ):
         ## GAN (maximize w.r.t discriminator params )
         self.gan_logprob = tensor.mean( tensor.log( p_org ) + tensor.log( p_gen2 ) ) 
 
-        ## Overall cost w.r.t generator in early pahse
+        ## Overall cost w.r.t generator in early phase
         ## inputs: [ self.x, self.e ]
         self.early_cost_gen = self.reconstruct_cost_vis - self.prior_cost \
 
-        ## Overall cost w.r.t discriminator in early pahse
+        ## Overall cost w.r.t discriminator in early phase
         ## inputs: [ self.z_in ]
         self.early_cost_dis = - self.gan_logprob
 
