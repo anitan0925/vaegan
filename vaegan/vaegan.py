@@ -19,7 +19,7 @@ def zeros_param( shape, name ):
     return theano.shared( np.zeros( shape, dtype=theano.config.floatX ), name=name )
 
 class VAEGAN( object ):
-    def __init__( self, image_size, phase=0, seed=1234 ):
+    def __init__( self, seed=1234 ):
         self.phase = 0
         self.alpha = 0.5
 
